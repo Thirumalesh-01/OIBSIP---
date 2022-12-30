@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-image: url(https://th.bing.com/th/id/R.0c5c6d3a1e61b5053ef6ed42f680b2ed?rik=xLU%2fEnUvNizIaQ&riu=http%3a%2f%2fwallpaperheart.com%2fwp-content%2fuploads%2f2018%2f03%2fBest-HD-Background-best-background-images.jpg&ehk=J674siNqggonsMa2g6Ek%2bQVgwEJYycMcdjidBzMOFOU%3d&risl=&pid=ImgRaw&r=0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.container-title {
+  font-size: 25px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  color: rgb(112, 50, 50);
+  text-shadow: 3px 1px rgb(106, 44, 44);
+}
+
+.inputcol {
+  display: grid;
+  column-gap: 5px;
+  grid-template-columns: 60% 10%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.textarea {
+  min-height: 50px;
+  height: 50px;
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 10px;
+  border-color: rgb(169, 65, 65);
+  font-size: 20px;
+  padding: 10px 10px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.textarea::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgb(29, 201, 103);
+}
+
+.textarea::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #1bd084;
+  cursor: pointer;
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.buttoninput {
+  border-radius: 10px;
+  border-color: rgb(27, 193, 173);
+  background-color: rgb(9, 239, 85);
+  font-size: 20px;
+}
+
+.buttoninput:hover {
+  background-color: #14b3cf;
+  color: white;
+}
+
+.todolist {
+  margin-top: 20px;
+}
+
+.itemall {
+  display: grid;
+  grid-template-columns: 60% 5% 5%;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+
+.item,
+.check-button,
+.trash-button {
+  border: none;
+  background-color: white;
+  min-height: 50px;
+  padding: 10px 10px;
+}
+
+.item {
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 10px 0 0 10px;
+  display: grid;
+  /* //  thus, uisng the grid, layout we, thus , able, to get the things, one after the other , this  layout, makes, the thing,s, to get aligned, one after the other 
+     and we coul;d be avle toarrnge them in the well fashion manner!!!  */
+  align-content: center;
+  font-size: 20px;
+}
+
+.check-button,
+.trash-button {
+  font-size: 15px;
+}
+
+.trash-button {
+  border-radius: 0 10px 10px 0;
+}
+
+.check-button:hover {
+  background-color: #37b3cc;
+  color: white;
+}
+
+.trash-button:hover {
+  background-color: #6b73c1;
+  color: white;
+}
+
+.checklist {
+  text-decoration: line-through;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+button,
+.check-button,
+.trash-button {
+  cursor: pointer;
+}
